@@ -3,7 +3,7 @@ const multer = require("multer"); // Multer for file upload handling
 const dotenv = require("dotenv"); // For handling environment variables
 const aws = require("aws-sdk"); // For handling cloud hosting bucket
 const multerS3 = require("multer-s3"); // For using multer with aws s3
-const bodyParser = require("body-parser");
+const bodyParser = require("body-parser"); // For parsing json body data
 
 // Configure environment variables
 dotenv.config();
@@ -14,6 +14,7 @@ const app = express();
 // Enable communication using json data
 app.use(bodyParser.json());
 
+// Your storage region
 const storageRegion = process.env.STORAGE_REGION;
 
 // Bucket URL
