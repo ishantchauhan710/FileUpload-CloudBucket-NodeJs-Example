@@ -29,7 +29,12 @@ STORAGE_REGION = YOUR-BUCKET-REGION
 npm install
 ```
 
-4. Finally, to test the code, open your web browser and write:
+4. Then start the server by writing:
+```
+npm start
+```
+
+5. Finally, to test the code, open your web browser and write:
 ```
 127.0.0.1:7000
 ```
